@@ -14,9 +14,9 @@
         </div>
         <div class="nav-links">
             <a href="#" class="active">Home</a>
-            <a href="#">Popular</a>
-            <a href="#">New Games</a>
-            <a href="#">Categories</a>
+            <a href="#popular">Popular</a>
+            <a href="#action">Action</a>
+            <a href="#puzzle">Puzzle</a>
         </div>
     </nav>
 
@@ -29,32 +29,94 @@
         </div>
     </div>
 
-    <div class="featured-games">
-        <h2>Featured Games</h2>
+    <div class="featured-games" id="popular">
+        <h2>Popular Games</h2>
         <div class="game-grid">
             <div class="game-card">
-                <div class="game-image"></div>
-                <h3>Game 1</h3>
-                <p>Action • Adventure</p>
-                <button class="play-btn">Play Now</button>
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Slope" alt="Slope">
+                </div>
+                <h3>Slope</h3>
+                <p>Racing • Action</p>
+                <button class="play-btn" data-game="slope">Play Now</button>
             </div>
             <div class="game-card">
-                <div class="game-image"></div>
-                <h3>Game 2</h3>
-                <p>Racing • Sports</p>
-                <button class="play-btn">Play Now</button>
-            </div>
-            <div class="game-card">
-                <div class="game-image"></div>
-                <h3>Game 3</h3>
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=2048" alt="2048">
+                </div>
+                <h3>2048</h3>
                 <p>Puzzle • Strategy</p>
-                <button class="play-btn">Play Now</button>
+                <button class="play-btn" data-game="2048">Play Now</button>
             </div>
             <div class="game-card">
-                <div class="game-image"></div>
-                <h3>Game 4</h3>
-                <p>RPG • Adventure</p>
-                <button class="play-btn">Play Now</button>
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Tetris" alt="Tetris">
+                </div>
+                <h3>Tetris</h3>
+                <p>Puzzle • Classic</p>
+                <button class="play-btn" data-game="tetris">Play Now</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Snake" alt="Snake">
+                </div>
+                <h3>Snake</h3>
+                <p>Arcade • Classic</p>
+                <button class="play-btn" data-game="snake">Play Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-games" id="action">
+        <h2>Action Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Tunnel+Rush" alt="Tunnel Rush">
+                </div>
+                <h3>Tunnel Rush</h3>
+                <p>Action • Speed</p>
+                <button class="play-btn" data-game="tunnel-rush">Play Now</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Run+3" alt="Run 3">
+                </div>
+                <h3>Run 3</h3>
+                <p>Platformer • Action</p>
+                <button class="play-btn" data-game="run3">Play Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-games" id="puzzle">
+        <h2>Puzzle Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Minesweeper" alt="Minesweeper">
+                </div>
+                <h3>Minesweeper</h3>
+                <p>Puzzle • Strategy</p>
+                <button class="play-btn" data-game="minesweeper">Play Now</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="https://via.placeholder.com/300x200/333333/ff1e1e?text=Sudoku" alt="Sudoku">
+                </div>
+                <h3>Sudoku</h3>
+                <p>Puzzle • Numbers</p>
+                <button class="play-btn" data-game="sudoku">Play Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <div class="game-frame-container">
+                <button class="fullscreen-btn"><i class="fas fa-expand"></i></button>
+                <iframe class="game-frame" id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -67,9 +129,9 @@
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#popular">Popular Games</a>
+                <a href="#action">Action Games</a>
+                <a href="#puzzle">Puzzle Games</a>
             </div>
         </div>
         <div class="footer-bottom">
