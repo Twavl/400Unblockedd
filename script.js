@@ -1,20 +1,53 @@
 // Game URLs and configurations
 const gameURLs = {
-    'slope': 'https://rawcdn.githack.com/scheng123321/slope-game/master/index.html',
+    // Popular Games
+    'slope': 'https://ubg77.github.io/game131014/slope/',
     '2048': 'https://funhtml5games.com/2048/index.html',
-    'tetris': 'https://www.lumpty.com/amusements/Games/Tetris/tetris.html',
-    'snake': 'https://www.google.com/fbx?fbx=snake_arcade',
-    'tunnel-rush': 'https://ubg77.github.io/game131014/tunnel-rush/',
-    'run3': 'https://ubg77.github.io/edit/run-3/',
-    'minesweeper': 'https://minesweeper.online/game/1',
-    'sudoku': 'https://sudoku.com/embed',
+    'among-us': 'https://ubg77.github.io/game131014/among-us/',
+    'fall-guys': 'https://ubg77.github.io/game131014/fall-guys/',
     'minecraft': 'https://classic.minecraft.net/',
+    'subway-surfers': 'https://ubg77.github.io/game131014/subway-surfers-ny/',
+    'geometry-dash': 'https://ubg77.github.io/game131014/geometry-dash/',
+    'happy-wheels': 'https://ubg77.github.io/game131014/happy-wheels/',
+    'crossy-road': 'https://ubg77.github.io/game131014/crossy-road/',
+    'flappy-bird': 'https://ubg77.github.io/game131014/flappy-bird/',
+    
+    // Action Games
+    'temple-run-2': 'https://ubg77.github.io/game131014/temple-run-2/',
     'basketball-stars': 'https://ubg77.github.io/game131014/basketball-stars/',
-    'happy-wheels': 'https://games-online.io/game/HappyWheels/',
-    'geometry-dash': 'https://geometrydashlite.io/game/',
-    'among-us': 'https://among-us.io/game/',
-    'fall-guys': 'https://fall-guys.io/game/',
-    'subway-surfers': 'https://ubg77.github.io/game131014/subway-surfers-ny/'
+    'rocket-league': 'https://ubg77.github.io/game131014/rocket-league/',
+    'run3': 'https://ubg77.github.io/edit/run-3/',
+    'tunnel-rush': 'https://ubg77.github.io/game131014/tunnel-rush/',
+    'vex': 'https://ubg77.github.io/game131014/vex/',
+    'retro-bowl': 'https://ubg77.github.io/game131014/retro-bowl/',
+    
+    // Racing Games
+    'moto-x3m': 'https://ubg77.github.io/game131014/moto-x3m/',
+    'drive-mad': 'https://ubg77.github.io/game131014/drive-mad/',
+    'hill-climb': 'https://ubg77.github.io/game131014/hill-climb-racing/',
+    
+    // Puzzle Games
+    'tetris': 'https://ubg77.github.io/game131014/tetris/',
+    'snake': 'https://www.google.com/fbx?fbx=snake_arcade',
+    'wordle': 'https://www.nytimes.com/games/wordle/index.html',
+    'candy-crush': 'https://ubg77.github.io/game131014/candy-crush/',
+    'cut-the-rope': 'https://ubg77.github.io/game131014/cut-the-rope/',
+    
+    // Fighting Games
+    'street-fighter': 'https://ubg77.github.io/game131014/street-fighter/',
+    'mortal-kombat': 'https://ubg77.github.io/game131014/mortal-kombat/',
+    
+    // Sports Games
+    'soccer-stars': 'https://ubg77.github.io/game131014/soccer-stars/',
+    '8-ball-pool': 'https://ubg77.github.io/game131014/8-ball-pool/',
+    'table-tennis': 'https://ubg77.github.io/game131014/table-tennis/',
+    
+    // Classic Games
+    'pacman': 'https://ubg77.github.io/game131014/pacman/',
+    'mario': 'https://ubg77.github.io/game131014/super-mario/',
+    'sonic': 'https://ubg77.github.io/game131014/sonic/',
+    'doom': 'https://ubg77.github.io/game131014/doom/',
+    'donkey-kong': 'https://ubg77.github.io/game131014/donkey-kong/'
 };
 
 // Modal and game frame handling
