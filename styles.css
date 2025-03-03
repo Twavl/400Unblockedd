@@ -133,47 +133,72 @@ body {
 
 .game-card {
     background: var(--medium-gray);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
     color: var(--white);
 }
 
 .game-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 30, 30, 0.2);
 }
 
 .game-image {
+    position: relative;
     height: 200px;
-    background: linear-gradient(45deg, var(--medium-gray), var(--dark-gray));
+    overflow: hidden;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-card:hover .game-image img {
+    transform: scale(1.1);
+}
+
+.game-info {
+    padding: 1rem;
+    background: linear-gradient(180deg, var(--medium-gray) 0%, var(--dark-gray) 100%);
 }
 
 .game-card h3 {
-    padding: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
     color: var(--white);
 }
 
 .game-card p {
-    padding: 0 1rem;
     color: var(--light-gray);
     font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .play-btn {
-    margin: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: var(--primary-red);
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    background: linear-gradient(45deg, var(--primary-red), var(--secondary-red));
     color: var(--white);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: calc(100% - 2rem);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .play-btn:hover {
-    background-color: var(--secondary-red);
+    background: linear-gradient(45deg, var(--secondary-red), var(--primary-red));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 30, 30, 0.3);
 }
 
 /* Footer Styles */
@@ -243,11 +268,8 @@ footer {
 .game-frame-container {
     position: relative;
     width: 100%;
-    height: 600px;
-    margin: 20px 0;
+    height: 80vh;
     background: var(--dark-gray);
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .game-frame {
@@ -258,20 +280,23 @@ footer {
 
 .fullscreen-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: var(--primary-red);
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, var(--primary-red), var(--secondary-red));
     color: var(--white);
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     cursor: pointer;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .fullscreen-btn:hover {
-    background: var(--secondary-red);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 30, 30, 0.3);
 }
 
 /* Modal Styles */
@@ -289,11 +314,12 @@ footer {
 }
 
 .modal-content {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1400px;
     background: var(--dark-gray);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
 }
 
 /* Game Images */
@@ -344,4 +370,22 @@ footer {
     .game-frame-container {
         height: 100%;
     }
+}
+
+/* Game categories styling */
+.category-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), transparent);
+    border-radius: 2px;
 } 
