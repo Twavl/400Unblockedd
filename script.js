@@ -1,13 +1,20 @@
 // Game URLs and configurations
 const gameURLs = {
-    'slope': 'https://slope-game.github.io/',
-    '2048': 'https://play2048.co/',
-    'tetris': 'https://tetris.com/play-tetris',
-    'snake': 'https://playsnake.org/',
-    'tunnel-rush': 'https://tunnel-rush.io/',
-    'run3': 'https://run3.io/',
-    'minesweeper': 'https://minesweeper.online/',
-    'sudoku': 'https://sudoku.com/'
+    'slope': 'https://rawcdn.githack.com/scheng123321/slope-game/master/index.html',
+    '2048': 'https://funhtml5games.com/2048/index.html',
+    'tetris': 'https://www.lumpty.com/amusements/Games/Tetris/tetris.html',
+    'snake': 'https://www.google.com/fbx?fbx=snake_arcade',
+    'tunnel-rush': 'https://ubg77.github.io/game131014/tunnel-rush/',
+    'run3': 'https://ubg77.github.io/edit/run-3/',
+    'minesweeper': 'https://minesweeper.online/game/1',
+    'sudoku': 'https://sudoku.com/embed',
+    'minecraft': 'https://classic.minecraft.net/',
+    'basketball-stars': 'https://ubg77.github.io/game131014/basketball-stars/',
+    'happy-wheels': 'https://games-online.io/game/HappyWheels/',
+    'geometry-dash': 'https://geometrydashlite.io/game/',
+    'among-us': 'https://among-us.io/game/',
+    'fall-guys': 'https://fall-guys.io/game/',
+    'subway-surfers': 'https://ubg77.github.io/game131014/subway-surfers-ny/'
 };
 
 // Modal and game frame handling
